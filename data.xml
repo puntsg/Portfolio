@@ -43,39 +43,6 @@
         <institution>Institució Montserrat</institution>
     </Study>
 </Studies>
-<Skills>
-    <Skill>
-        <Name>JIRA</Name>
-    </Skill>
-    <Skill>
-        <Name>Unreal C++</Name>
-    </Skill>
-    <Skill>
-        <Name>Unreal Engine</Name>
-    </Skill>
-</Skills>
-<Languages>
-    <Language>
-        <Name>Catalán</Name>
-        <Level>Nativo o bilingüe</Level>
-    </Language>
-    <Language>
-        <Name>Español</Name>
-        <Level>Nativo o bilingüe</Level>
-    </Language>
-    <Language>
-        <Name>Inglés</Name>
-        <Level>Competencia profesional</Level>
-    </Language>
-    <Language>
-        <Name>Francés</Name>
-        <Level>Básico</Level>
-    </Language>
-    <Language>
-        <Name>Italiano</Name>
-        <Level>Básico</Level>
-    </Language>
-</Languages>
 <JobExperience>
     <Job>
         <Title>Programador informático</Title>
@@ -92,7 +59,7 @@
         <Company>Ping Pong Technologies</Company>
         <Dates>nov 2022 - abr 2023</Dates>
         <Location>Barcelona, Cataluña, España</Location>
-        <Description>Realización de contenido interactivo para museos, eventos y exposiciones.</Description>
+        <Description>Soporte en la realización de contenido interactivo para museos, eventos y exposiciones.</Description>
         <Media>
             <Image>ppt.jpg</Image>
         </Media>
@@ -108,6 +75,69 @@
         </Media>
     </Job>
 </JobExperience>
+<Skills>
+    <Skill>
+        <Name>JIRA</Name>
+    </Skill>
+    <Skill>
+        <Name>Trello</Name>
+    </Skill>
+    <Skill>
+        <Name>Git</Name>
+    </Skill>
+    <Skill>
+        <Name>Arduino</Name>
+    </Skill>
+    <Skill>
+        <Name>C#</Name>
+    </Skill>
+    <Skill>
+        <Name>Unity</Name>
+    </Skill>
+    <Skill>
+        <Name>JavaScript</Name>
+    </Skill>
+    <Skill>
+        <Name>Lens Studio</Name>
+    </Skill>
+    <Skill>
+        <Name>Unreal C++</Name>
+    </Skill>
+    <Skill>
+        <Name>Unreal Blueprints</Name>
+    </Skill>
+    <Skill>
+        <Name>Unreal Engine</Name>
+    </Skill>
+    <Skill>
+        <Name>FMOD</Name>
+    </Skill>
+    <Skill>
+        <Name>Formación estudiantes en prácticas</Name>
+    </Skill>
+</Skills>
+<Languages>
+    <Language>
+        <Name>Catalán</Name>
+        <Level>Nativo/bilingüe</Level>
+    </Language>
+    <Language>
+        <Name>Español</Name>
+        <Level>Nativo/bilingüe</Level>
+    </Language>
+    <Language>
+        <Name>Inglés</Name>
+        <Level>Competencia profesional</Level>
+    </Language>
+    <Language>
+        <Name>Francés</Name>
+        <Level>Básico</Level>
+    </Language>
+    <Language>
+        <Name>Italiano</Name>
+        <Level>Básico</Level>
+    </Language>
+</Languages>
 <Projects>
     <jobProjects>
         <Project>
@@ -133,6 +163,7 @@
                 <Task>Estudio de mercado</Task>
             </Tasks>
             <Media>
+                <Image>symphony.webp</Image>
             </Media>  
         </Project>
         <Project>
@@ -144,6 +175,7 @@
                 <Task>Adaptación</Task>
             </Tasks>
             <Media>
+                <Image>talking-brains.jpeg</Image>
             </Media>  
         </Project>
         <Project>
@@ -161,9 +193,9 @@
             </Media>  
         </Project>
         <Project>
-            <Title>Talking Brains</Title>
-            <Dates>Jul 2025-aug 2025</Dates>
-            <Description>This is the description for Project 1.</Description> 
+            <Title>Taula d'operacions</Title>
+            <Dates>may 2025-sep 2025</Dates>
+            <Description>Aplicativo interactivo para la exposición conmemorativa del 70 aniversario del centro hospitalario Vall d'Hebrón</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
                 <Task>Adaptación</Task>

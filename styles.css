@@ -100,6 +100,7 @@ body > h1 {
 }
 
 #Studies {
+
 }
 #JobExperience {
 }
@@ -128,10 +129,23 @@ body > h1 {
 /* ---------- Tarjetas de estudios y trabajos ---------- */
 #Studies,
 #JobExperience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#Studies > h3,
+#JobExperience > h3 {
+  width: 100%;
 }
 
 #Studies > div,
 #JobExperience > div {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 280px;
+  max-width: 400px;
+  padding: 16px 20px;
 }
 
 /* Línea de color a la izquierda */
@@ -145,6 +159,9 @@ body > h1 {
 
 #Studies > div > h3,
 #JobExperience > div > h3 {
+  margin: 0 0 8px;
+  padding-right: 56px;
+  font-size: 16px;
 }
 
 /* Institución / empresa */
@@ -154,11 +171,20 @@ body > h1 {
 
 #Studies > div > p,
 #JobExperience > div > p {
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 /* Logo arriba a la derecha */
 #Studies > div > img,
 #JobExperience > div > img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* Etiquetas "Dates:", "Description:", "Tasks:" */
@@ -167,18 +193,26 @@ p > strong {
 
 /* ---------- Skills como chips ---------- */
 #Skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #Skills > h3 {
+  width: 100%;
 }
 
 #Skills > div {
+  padding: 4px 12px;
 }
 
 #Skills > div:hover {
 }
 
 #Skills > div > h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 #Skills > div > p {
@@ -204,6 +238,15 @@ p > strong {
 #JobProjects,
 #GameProjects,
 #personalProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#JobProjects > h3,
+#GameProjects > h3,
+#personalProjects > h3 {
+  width: 100%;
 }
 
 #JobProjects::before,
@@ -211,7 +254,10 @@ p > strong {
 #personalProjects::before {
 }
 
-/* Tarjeta de proyecto */
+/* Tarjeta amarilla (estudios, trabajos, skills y proyectos) */
+#Studies > div,
+#JobExperience > div,
+#Skills > div,
 #JobProjects > div,
 #GameProjects > div,
 #personalProjects > div {
@@ -219,6 +265,18 @@ p > strong {
   box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#JobProjects > div,
+#GameProjects > div,
+#personalProjects > div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  max-width: 420px;
+  padding: 16px 20px;
+  overflow: hidden;
 }
 
 #JobProjects > div:hover,
@@ -235,13 +293,24 @@ p > strong {
 #JobProjects > div > div > img,
 #GameProjects > div > div > img,
 #personalProjects > div > div > img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* Widget de itch.io: banner de 167px de alto, abajo de la tarjeta */
 #Projects .embed {
+  margin-top: auto;
 }
 
 #Projects .embed iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 167px;
+  border: 0;
 }
 
 #JobProjects > div:hover img,
@@ -252,18 +321,32 @@ p > strong {
 #JobProjects > div > h3,
 #GameProjects > div > h3,
 #personalProjects > div > h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
 }
 
 #JobProjects > div > p,
 #GameProjects > div > p,
 #personalProjects > div > p {
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 /* Tareas como etiquetas */
 #Projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 12px;
+  padding: 0;
+  list-style: none;
 }
 
 #Projects li {
+  padding: 2px 10px;
+  font-size: 13px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Botón "Ver en itch.io" */
@@ -295,7 +378,11 @@ p > strong {
     }
 
     #Studies > div,
-    #JobExperience > div {
+    #JobExperience > div,
+    #JobProjects > div,
+    #GameProjects > div,
+    #personalProjects > div {
+        max-width: 100%;
     }
 
     #Studies > div > img,
