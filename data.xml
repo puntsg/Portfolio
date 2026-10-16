@@ -248,8 +248,32 @@
                 <Task>Programación de jugabilidad</Task>
             </Tasks>
             <Media>
+                
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Party Goobers</Title>
+            <Dates>sep 2024 - may 2025</Dates>
+            <Description>Juego de lucha multijugador en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
+            <Genre>Lucha, Plataformas</Genre>
+            <Platform>Windows</Platform>
+            <Status>En desarrollo</Status>
+            <Team>Party Puppers</Team>
+            <Engine>Unity</Engine>
+    
+            <Media>
                 <Source>
-                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/3511601" width="552" height="167"><a href="https://party-puppers.itch.io/party-goobers">Party Goobers by Party Puppers</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Forget da gold!</Title>
+            <Dates>jul 2025</Dates>
+            <Description>Proyecto realizado en tres horas para una competición de desarrollo de videojuegos (game jam). Eres un marinero en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie con todo el oro que puedas, pero cuidado: si vas demasiado cargado, el peso te frenará.</Description>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/3756348?bg_color=0484d1&amp;fg_color=ffe762&amp;link_color=b86f50&amp;border_color=b86f50" width="552" height="167"><a href="https://sberlanga.itch.io/forget-the-gold">Forget da gold! by SBerlanga, Dairon</a></iframe>
                 </Source>
             </Media>  
         </Project>
@@ -269,7 +293,7 @@
             <Dates>oct 2025-nov 2025</Dates>
             <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas a un pulpito que explora el fondo marino.</Description> 
             <Tasks>
-                <Task>Unreal</Task>
+                <Task>Unreal Bueprints</Task>
                 <Task>Programación</Task>
             </Tasks>
             <Media>
@@ -279,26 +303,32 @@
             </Media>  
         </Project>
         <Project>
-            <Title>Party Goobers</Title>
-            <Description>Juego de lucha multijugador en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
-            <Genre>Lucha, Plataformas</Genre>
-            <Platform>Windows</Platform>
-            <Status>En desarrollo</Status>
-            <Team>Party Puppers</Team>
-            <Engine>Unity</Engine>
-            <Link>https://party-puppers.itch.io/party-goobers</Link>
+            <Title>Yakotaki</Title>
+            <Dates>dic 2025-may 2026</Dates>
+            <Description>Juego de plataformas 3D en el que encarnas a un ser con la capacidad de adquirir las habilidades de otros con el fin de sanar su mundo.</Description> 
+            <Tasks>
+                <Task>Programación</Task>
+                <Task>Unreal C++</Task>
+                <Task>Gestión de proyectos</Task>
+            </Tasks>
             <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
             </Media>  
         </Project>
     </gameProjects>
     <PersonalProjects>
         <Project>
-            <Title>Forget da gold!</Title>
-            <Description>Proyecto realizado en tres horas para una competición de desarrollo de videojuegos (game jam). Eres un marinero en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie con todo el oro que puedas, pero cuidado: si vas demasiado cargado, el peso te frenará.</Description>
+            <Title>GBAE</Title>
+            <Dates>desde sep 2026</Dates>
+            <Description>Libreria para creación de juegos de Game Boy Advance tomando Butano como base. Incluye gestión de escenas, entidades y sistema de colisiones.</Description>
+            <Tasks>
+                <Task>C++</Task>
+                <Task>Programación</Task>
+                <Task>GBA</Task>
+            </Tasks>
             <Media>
-                <Source>
-                    <iframe frameborder="0" src="https://itch.io/embed/3756348?bg_color=0484d1&amp;fg_color=ffe762&amp;link_color=b86f50&amp;border_color=b86f50" width="552" height="167"><a href="https://sberlanga.itch.io/forget-the-gold">Forget da gold! by SBerlanga, Dairon</a></iframe>
-                </Source>
             </Media>  
         </Project>
     </PersonalProjects>
