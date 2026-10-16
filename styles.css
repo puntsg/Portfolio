@@ -223,9 +223,10 @@ main h2::after {
 
 /* Texto de introducción de cada apartado */
 #Projects .intro {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 640px;
-  margin: 0 auto 16px;
+  padding: 0 max(0px, calc((100% - 640px) / 2));
+  margin: 0 0 16px;
   text-align: center;
   color: var(--text-muted);
 }
