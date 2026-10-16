@@ -215,6 +215,10 @@ p > strong {
 #JobProjects > div,
 #GameProjects > div,
 #personalProjects > div {
+  background-color: rgba(255, 238, 0, 0.2);
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #JobProjects > div:hover,

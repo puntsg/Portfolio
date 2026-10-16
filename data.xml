@@ -125,9 +125,10 @@
         <Project>
             <Title>Symphony</Title>
             <Dates>dec 2023-aug 2024</Dates>
-            <Description>Mantenimiento</Description> 
+            <Description>Experiencia inmersiva musical en Realidad Virtual</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
+                <Task>Actualización de hardware y software</Task>
                 <Task>QA</Task>
                 <Task>Estudio de mercado</Task>
             </Tasks>
@@ -137,10 +138,24 @@
         <Project>
             <Title>Talking Brains</Title>
             <Dates>mar 2024-apr 2024</Dates>
-            <Description>This is the description for Project 1.</Description> 
+            <Description>Exposición interactiva sobre el cerebro humano para Obra Social LaCaixa. Encargado de la adaptación para el traslado a portugal</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
                 <Task>Adaptación</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Matemifasol</Title>
+            <Dates>mar 2024-jun 2024</Dates>
+            <Description>Expposición interactiva itinerante sobre la musica y su relación con las matemáticas. Programación del interactivo/escaner y piano de la entrada.</Description> 
+            <Tasks>
+                <Task>Programación de UI</Task>
+                <Task>Arduino</Task>
+                <Task>QA</Task>
+                <Task>Tratamiento de contenido</Task>
+                <Task>Detección de personas con Mediapipe e infrarojos</Task>
             </Tasks>
             <Media>
             </Media>  
@@ -159,10 +174,22 @@
         <Project>
             <Title>Fantastix-Manduka</Title>
             <Dates>jan 2026-mar 2026</Dates>
-            <Description>This is the description for Project 1.</Description> 
+            <Description>Interactivo para la experiencia inmersiva <a href="https://fantastixsuper3.com/">fantastix</a> del canal televisivo SX3.</Description> 
             <Tasks>
                 <Task>Animación de UI</Task>
                 <Task>Programación</Task>
+                <Task>QA</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Ojo de halcón</Title>
+            <Dates>jan 2026-mar 2026</Dates>
+            <Description>Simulador de hojo de halcón para el museo de Rafa Nadal a cargo de Mediapro Exhibitions</Description> 
+            <Tasks>
+                <Task>Programación</Task>
+                <Task>Animación de UI</Task>
                 <Task>QA</Task>
             </Tasks>
             <Media>
