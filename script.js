@@ -10,8 +10,10 @@ function getData() {
                 console.error(xmlDoc.querySelector("parsererror").textContent);
                 return;
             }
+            getAboutMe();
             getStudies();
             getSkills();
+            getLanguages();
             getJobExperience();
             getProjects("jobProjects", "JobProjects");
             getProjects("gameProjects", "GameProjects");
@@ -19,8 +21,14 @@ function getData() {
         })
         .catch(error => console.error('Error fetching XML:', error));
 }
-
-// Devuelve el texto de la primera etiqueta "tag" dentro de "node", o "" si no existe
+function getAboutMe(){
+    var aboutMe = xmlDoc.getElementsByTagName("About")[0];
+    var aboutMeText = aboutMe ? aboutMe.textContent.trim() : "";
+    var aboutMeContainer = document.getElementById("AboutMeText");
+    if (aboutMeContainer) {
+        aboutMeContainer.textContent = aboutMeText;
+    }
+}
 function getText(node, tag) {
     var element = node.getElementsByTagName(tag)[0];
     return element ? element.textContent.trim() : "";
@@ -44,6 +52,23 @@ function getStudies() {
         studiesList.appendChild(studyElement);
     }
 }
+
+function getLanguages() {
+    var languages = xmlDoc.getElementsByTagName("Language");
+    var languagesList = document.getElementById("Languages");
+    if (!languagesList) return;
+    for (var i = 0; i < languages.length; i++) {
+        var language = languages[i];
+        var name = getText(language, "Name");
+        var level = getText(language, "Level");
+
+        var languageElement = document.createElement("div");
+        languageElement.innerHTML = "<h3>" + name + "</h3>";
+        if (level) languageElement.innerHTML += "<p><strong>Level:</strong> " + level + "</p>";
+        languagesList.appendChild(languageElement);
+    }
+}
+
 function getSkills() {
     var skills = xmlDoc.getElementsByTagName("Skill");
     var skillsList = document.getElementById("Skills");
@@ -77,8 +102,6 @@ function getJobExperience() {
         jobsList.appendChild(jobElement);
     }
 }
-
-// Pinta los proyectos de la sección "xmlTag" del XML dentro del div "containerId" del HTML
 function getProjects(xmlTag, containerId) {
     var section = xmlDoc.getElementsByTagName(xmlTag)[0];
     var projectsList = document.getElementById(containerId);
@@ -95,8 +118,6 @@ function getProjects(xmlTag, containerId) {
         var tasks = project.getElementsByTagName("Task");
         var mediaSource = project.getElementsByTagName("Source")[0];
 
-        // Se monta todo el HTML en una variable y se asigna una sola vez,
-        // si no el navegador cierra el <ul> antes de añadir los <li>
         var html = "<h3>" + title + "</h3>";
         if (dates) html += "<p><strong>Dates:</strong> " + dates + "</p>";
         if (description) html += "<p><strong>Description:</strong> " + description + "</p>";

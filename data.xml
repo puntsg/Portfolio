@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV>
 <Profile>
-    <Name>Sergi G. Berlanga</Name>
-    <Headline>Estudiante en ENTI-UB</Headline>
-    <Location>Barcelona, Cataluña, España</Location>
-    <Contact>
-        <Email>sergigonzalezberlanga@gmail.com</Email>
-        <LinkedIn>https://www.linkedin.com/in/gonzalezberlanga-sergi</LinkedIn>
-        <Itch>https://sberlanga.itch.io/</Itch>
-    </Contact>
+    <About>Hola, me llamo Sergi Gonzalez Berlanga, actualmente soy estudiante de la carrera de Contenidos Digitales Interactivos en ENTI, centro adscrito a la Universitat de Barcelona.</About>
 </Profile>
 <Studies>
     <Study>
@@ -143,13 +136,25 @@
         <Project>
             <Title>Crida d'alineació</Title>
             <Dates>feb 2023-mar 2023</Dates>
-            <Description>This is the description for Project 1.</Description> 
+            <Description>Proyecto en el que el usuario graba un clip de audio introduciendo a las jugadoras del equipo.</Description> 
             <Tasks>
                 <Task>Animación de UI</Task>
                 <Task>QA</Task>
             </Tasks>
             <Media>
                 <Image>Barça.png</Image>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Banana Gate</Title>
+            <Dates>jun 2023-oct 2023</Dates>
+            <Description>Filtros para el fotomaton del Museo de arte prohibido de Tatxo Benet.</Description> 
+            <Tasks>
+                <Task>Programación</Task>
+                <Task>Lens Studio</Task>
+            </Tasks>
+            <Media>
+                
             </Media>  
         </Project>
         <Project>
@@ -201,18 +206,20 @@
                 <Task>Adaptación</Task>
             </Tasks>
             <Media>
+                <Image>trasplantament.jpg</Image>
             </Media>  
         </Project>
         <Project>
             <Title>Fantastix-Manduka</Title>
             <Dates>jan 2026-mar 2026</Dates>
-            <Description>Interactivo para la experiencia inmersiva <a href="https://fantastixsuper3.com/">fantastix</a> del canal televisivo SX3.</Description> 
+            <Description>Interactivo para la experiencia inmersiva <a href="https://fantastixsuper3.com/">fantastix</a> del canal televisivo SX3 basado en el programa Manduka.</Description> 
             <Tasks>
                 <Task>Animación de UI</Task>
                 <Task>Programación</Task>
                 <Task>QA</Task>
             </Tasks>
             <Media>
+                <Image>fantastix.jpg</Image>
             </Media>  
         </Project>
         <Project>
@@ -225,21 +232,63 @@
                 <Task>QA</Task>
             </Tasks>
             <Media>
+                <Image>OjoHalcon.jpg</Image>
             </Media>  
         </Project>
     </jobProjects>
     <gameProjects>
         <Project>
-            <Title>Beneath the blue</Title>
-            <Dates>jan 2022-mar 2022</Dates>
-            <Description>This is the description for Game Project 1.</Description> 
+            <Title>Sigurd</Title>
+            <Dates>feb 2023-may 2023</Dates>
+            <Description>Juego de acción/aventura realizado como proyecto final de CFGS en conjunto con otros estudiantes tanto de programación como de arte.</Description> 
             <Tasks>
-                <Task>Task 1</Task>
-                <Task>Task 2</Task>
+                <Task>Unity</Task>
+                <Task>Programación</Task>
+                <Task>Character controller</Task>
+                <Task>Gameplay programmer</Task>
             </Tasks>
             <Media>
                 <Source>
                     <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Party Goobers</Title>
+            <Description>Juego de lucha tipo party en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
+            <Genre>Lucha, Plataformas</Genre>
+            <Platform>Windows</Platform>
+            <Status>En desarrollo</Status>
+            <Team>Party Puppers</Team>
+            <Engine>Unity</Engine>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Splitted</Title>
+            <Dates>sep 2025-oct 2025</Dates>
+            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas explorador resolviendo acertijos con clones suyos.</Description> 
+            <Tasks>
+                <Task>Unity</Task>
+                <Task>Programación</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Beneath the blue</Title>
+            <Dates>oct 2025-nov 2025</Dates>
+            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas a un pulpito explorando el fondo marino.</Description> 
+            <Tasks>
+                <Task>Unreal</Task>
+                <Task>Programación</Task>
+            </Tasks>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4545428?bg_color=0484d1&amp;fg_color=ffe762&amp;link_color=2ce8f4&amp;border_color=2ce8f4" width="552" height="167"><a href="https://sberlanga.itch.io/beneath-the-blue">Beneath the blue by SBerlanga, Dairon, Paula Rubio, Nero Moreno</a></iframe>
                 </Source>
             </Media>  
         </Project>
@@ -262,16 +311,10 @@
     <PersonalProjects>
         <Project>
             <Title>Forget da gold!</Title>
-            <Description>Eres un pirata en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie, pero cuidado: el oro te puede frenar.</Description>
-            <Genre>Aventura</Genre>
-            <Platform>Windows</Platform>
-            <Status>Publicado</Status>
-            <Team>SBerlanga, Dairon</Team>
-            <Event>Trijam #332 (game jam de 3 horas)</Event>
-            <Link>https://sberlanga.itch.io/forget-the-gold</Link>
+            <Description>Proyecto realizado para una Jam en tres horas. Eres un marinero en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie con el mayor oro posible, pero cuidado porque de ir demasiado cargado te puede frenar.</Description>
             <Media>
                 <Source>
-                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/3756348?bg_color=0484d1&amp;fg_color=ffe762&amp;link_color=b86f50&amp;border_color=b86f50" width="552" height="167"><a href="https://sberlanga.itch.io/forget-the-gold">Forget da gold! by SBerlanga, Dairon</a></iframe>
                 </Source>
             </Media>  
         </Project>

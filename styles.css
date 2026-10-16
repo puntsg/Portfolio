@@ -221,6 +221,34 @@ p > strong {
 #Skills > div > p > strong {
 }
 
+/* ---------- Idiomas en fila ---------- */
+#Languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#Languages > h3 {
+  width: 100%;
+}
+
+#Languages > div {
+  box-sizing: border-box;
+  flex: 1 1 160px;
+  max-width: 220px;
+  padding: 12px 20px;
+}
+
+#Languages > div > h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+#Languages > div > p {
+  margin: 0;
+  font-size: 14px;
+}
+
 /* ---------- Proyectos ---------- */
 #Projects {
 }
@@ -258,6 +286,7 @@ p > strong {
 #Studies > div,
 #JobExperience > div,
 #Skills > div,
+#Languages > div,
 #JobProjects > div,
 #GameProjects > div,
 #personalProjects > div {
