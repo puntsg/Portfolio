@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* ---------- Colores y medidas ---------- */
+:root {
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    }
+}
+
+/* ---------- Base ---------- */
+* {
+}
+
+html {
+}
+
+body {
+}
+
+h1, h2, h3 {
+}
+
+p {
+}
+
+a {
+}
+
+img {
+}
+
+::selection {
+}
+
+/* ---------- Cabecera ---------- */
+body > h1 {
+}
+
+/* ---------- About Me ---------- */
+#AboutMe {
+}
+
+#AboutMe > h2 {
+}
+
+#AboutMe > p {
+}
+
+#Studies {
+}
+#JobExperience {
+}
+#Skills {
+}
+
+/* Títulos grandes de sección (h2 y "Projects") */
+#AboutMe > h2,
+#Projects::before {
+}
+
+/* ---------- Títulos de cada bloque ---------- */
+#Studies > h3,
+#Skills > h3,
+#JobExperience > h3,
+#JobProjects::before,
+#GameProjects::before,
+#personalProjects::before {
+}
+
+#Studies > h3::after,
+#Skills > h3::after,
+#JobExperience > h3::after {
+}
+
+/* ---------- Tarjetas de estudios y trabajos ---------- */
+#Studies,
+#JobExperience {
+}
+
+#Studies > div,
+#JobExperience > div {
+}
+
+/* Línea de color a la izquierda */
+#Studies > div::before,
+#JobExperience > div::before {
+}
+
+#Studies > div:hover,
+#JobExperience > div:hover {
+}
+
+#Studies > div > h3,
+#JobExperience > div > h3 {
+}
+
+/* Institución / empresa */
+#Studies > div > p:nth-of-type(1),
+#JobExperience > div > p:nth-of-type(1) {
+}
+
+#Studies > div > p,
+#JobExperience > div > p {
+}
+
+/* Logo arriba a la derecha */
+#Studies > div > img,
+#JobExperience > div > img {
+}
+
+/* Etiquetas "Dates:", "Description:", "Tasks:" */
+p > strong {
+}
+
+/* ---------- Skills como chips ---------- */
+#Skills {
+}
+
+#Skills > h3 {
+}
+
+#Skills > div {
+}
+
+#Skills > div:hover {
+}
+
+#Skills > div > h3 {
+}
+
+#Skills > div > p {
+}
+
+#Skills > div > p > strong {
+}
+
+/* ---------- Proyectos ---------- */
+#Projects {
+}
+
+#Projects::before {
+}
+
+#JobProjects::before {
+}
+#GameProjects::before {
+}
+#personalProjects::before {
+}
+
+#JobProjects,
+#GameProjects,
+#personalProjects {
+}
+
+#JobProjects::before,
+#GameProjects::before,
+#personalProjects::before {
+}
+
+/* Tarjeta de proyecto */
+#JobProjects > div,
+#GameProjects > div,
+#personalProjects > div {
+}
+
+#JobProjects > div:hover,
+#GameProjects > div:hover,
+#personalProjects > div:hover {
+}
+
+/* La imagen va la última en el HTML, pero se muestra arriba */
+#JobProjects > div > div,
+#GameProjects > div > div,
+#personalProjects > div > div {
+}
+
+#JobProjects > div > div > img,
+#GameProjects > div > div > img,
+#personalProjects > div > div > img {
+}
+
+/* Widget de itch.io: banner de 167px de alto, abajo de la tarjeta */
+#Projects .embed {
+}
+
+#Projects .embed iframe {
+}
+
+#JobProjects > div:hover img,
+#GameProjects > div:hover img,
+#personalProjects > div:hover img {
+}
+
+#JobProjects > div > h3,
+#GameProjects > div > h3,
+#personalProjects > div > h3 {
+}
+
+#JobProjects > div > p,
+#GameProjects > div > p,
+#personalProjects > div > p {
+}
+
+/* Tareas como etiquetas */
+#Projects ul {
+}
+
+#Projects li {
+}
+
+/* Botón "Ver en itch.io" */
+#Projects a {
+}
+
+#Projects a:hover {
+}
+
+/* ---------- Animación de entrada ---------- */
+@keyframes fadeUp {
+    from {
+    }
+    to {
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 760px) {
+    body {
+    }
+
+    #AboutMe {
+    }
+
+    #Studies > div,
+    #JobExperience > div {
+    }
+
+    #Studies > div > img,
+    #JobExperience > div > img {
+    }
+
+    #JobProjects,
+    #GameProjects,
+    #personalProjects {
+    }
+}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV>
+<Profile>
+    <Name>Sergi G. Berlanga</Name>
+    <Headline>Estudiante en ENTI-UB</Headline>
+    <Location>Barcelona, Cataluña, España</Location>
+    <Contact>
+        <Email>sergigonzalezberlanga@gmail.com</Email>
+        <LinkedIn>https://www.linkedin.com/in/gonzalezberlanga-sergi</LinkedIn>
+        <Itch>https://sberlanga.itch.io/</Itch>
+    </Contact>
+</Profile>
+<Studies>
+    <Study>
+        <Title>Contenidos digitales interactivos - Diseño de videojuegos y contenido interactivo</Title>
+        <Dates>2023-2028</Dates>
+        <institution>Escola de Noves Tecnologies Interactives - Universitat de Barcelona</institution>
+        <Media>
+            <Image>enti.jpg</Image>
+        </Media>
+    </Study>
+    <Study>
+        <Title>Desarrollo de aplicaciones multiplataforma</Title>
+        <Dates>2021-2023</Dates>
+        <institution>Institut Pedralbes</institution>
+        <Description>Perfil profesional en videojuegos y ocio digital. Informática.</Description>
+        <Media>
+            <Image>inspedralbes.jpg</Image>
+        </Media>
+    </Study>
+    <Study>
+        <Title>Sistemas microinformáticos y redes</Title>
+        <Dates>2018-2020</Dates>
+        <institution>Salesians Sarrià</institution>
+        <Description>Informática.</Description>
+        <Media>
+            <Image>salesians.png</Image>
+        </Media>
+    </Study>
+    <Study>
+        <Title>Educación Secundaria Obligatoria (ESO)</Title>
+        <Dates>2014-2018</Dates>
+        <institution>Institució Montserrat</institution>
+    </Study>
+</Studies>
+<Skills>
+    <Skill>
+        <Name>JIRA</Name>
+    </Skill>
+    <Skill>
+        <Name>Unreal C++</Name>
+    </Skill>
+    <Skill>
+        <Name>Unreal Engine</Name>
+    </Skill>
+</Skills>
+<Languages>
+    <Language>
+        <Name>Catalán</Name>
+        <Level>Nativo o bilingüe</Level>
+    </Language>
+    <Language>
+        <Name>Español</Name>
+        <Level>Nativo o bilingüe</Level>
+    </Language>
+    <Language>
+        <Name>Inglés</Name>
+        <Level>Competencia profesional</Level>
+    </Language>
+    <Language>
+        <Name>Francés</Name>
+        <Level>Básico</Level>
+    </Language>
+    <Language>
+        <Name>Italiano</Name>
+        <Level>Básico</Level>
+    </Language>
+</Languages>
+<JobExperience>
+    <Job>
+        <Title>Programador informático</Title>
+        <Company>Ping Pong Technologies</Company>
+        <Dates>jun 2023 - mar 2026</Dates>
+        <Location>Barcelona, Cataluña, España</Location>
+        <Description>Realización de contenido interactivo para museos, eventos y exposiciones.</Description>
+        <Media>
+            <Image>ppt.jpg</Image>
+        </Media>
+    </Job>
+    <Job>
+        <Title>Estudiante en prácticas</Title>
+        <Company>Ping Pong Technologies</Company>
+        <Dates>nov 2022 - abr 2023</Dates>
+        <Location>Barcelona, Cataluña, España</Location>
+        <Description>Realización de contenido interactivo para museos, eventos y exposiciones.</Description>
+        <Media>
+            <Image>ppt.jpg</Image>
+        </Media>
+    </Job>
+    <Job>
+        <Title>Estudiante en prácticas</Title>
+        <Company>CFA Palau de Mar</Company>
+        <Dates>jun 2019 - dic 2019</Dates>
+        <Location>Barcelona, Cataluña, España</Location>
+        <Description>Labores de mantenimiento y reparación de equipos informáticos y gestión de usuarios en Gmail y Moodle.</Description>
+        <Media>
+            <Image>palauDeMar.png</Image>
+        </Media>
+    </Job>
+</JobExperience>
+<Projects>
+    <jobProjects>
+        <Project>
+            <Title>Crida d'alineació</Title>
+            <Dates>feb 2023-mar 2023</Dates>
+            <Description>This is the description for Project 1.</Description> 
+            <Tasks>
+                <Task>Animación de UI</Task>
+                <Task>QA</Task>
+            </Tasks>
+            <Media>
+                <Image>Barça.png</Image>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Symphony</Title>
+            <Dates>dec 2023-aug 2024</Dates>
+            <Description>Mantenimiento</Description> 
+            <Tasks>
+                <Task>Mantenimiento</Task>
+                <Task>QA</Task>
+                <Task>Estudio de mercado</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Talking Brains</Title>
+            <Dates>mar 2024-apr 2024</Dates>
+            <Description>This is the description for Project 1.</Description> 
+            <Tasks>
+                <Task>Mantenimiento</Task>
+                <Task>Adaptación</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Talking Brains</Title>
+            <Dates>Jul 2025-aug 2025</Dates>
+            <Description>This is the description for Project 1.</Description> 
+            <Tasks>
+                <Task>Mantenimiento</Task>
+                <Task>Adaptación</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Fantastix-Manduka</Title>
+            <Dates>jan 2026-mar 2026</Dates>
+            <Description>This is the description for Project 1.</Description> 
+            <Tasks>
+                <Task>Animación de UI</Task>
+                <Task>Programación</Task>
+                <Task>QA</Task>
+            </Tasks>
+            <Media>
+            </Media>  
+        </Project>
+    </jobProjects>
+    <gameProjects>
+        <Project>
+            <Title>Beneath the blue</Title>
+            <Dates>jan 2022-mar 2022</Dates>
+            <Description>This is the description for Game Project 1.</Description> 
+            <Tasks>
+                <Task>Task 1</Task>
+                <Task>Task 2</Task>
+            </Tasks>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+        <Project>
+            <Title>Party Goobers</Title>
+            <Description>Juego de lucha tipo party en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
+            <Genre>Lucha, Plataformas</Genre>
+            <Platform>Windows</Platform>
+            <Status>En desarrollo</Status>
+            <Team>Party Puppers</Team>
+            <Engine>Unity</Engine>
+            <Link>https://party-puppers.itch.io/party-goobers</Link>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+    </gameProjects>
+    <PersonalProjects>
+        <Project>
+            <Title>Forget da gold!</Title>
+            <Description>Eres un pirata en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie, pero cuidado: el oro te puede frenar.</Description>
+            <Genre>Aventura</Genre>
+            <Platform>Windows</Platform>
+            <Status>Publicado</Status>
+            <Team>SBerlanga, Dairon</Team>
+            <Event>Trijam #332 (game jam de 3 horas)</Event>
+            <Link>https://sberlanga.itch.io/forget-the-gold</Link>
+            <Media>
+                <Source>
+                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
+                </Source>
+            </Media>  
+        </Project>
+    </PersonalProjects>
+</Projects>
+</CV>
