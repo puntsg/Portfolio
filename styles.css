@@ -2,25 +2,87 @@
 
 /* ---------- Colores y medidas ---------- */
 :root {
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-    }
+  --text: #e8ecf2;
+  --text-muted: #a9b4c4;
+  --accent: #ffe762;
+  --max-width: 1100px;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-title: 'Space Grotesk', 'Inter', sans-serif;
 }
 
 /* ---------- Base ---------- */
-* {
-}
-
 html {
-  height:100%;
+  min-height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%) fixed;
 }
 
 body {
-  margin:0;
+  margin: 0;
+  padding: 0 16px 64px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-title);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--accent);
+  color: #111;
+}
+
+/* ---------- Fondo de estrellas ---------- */
+/* Las sombras (estrellas) se generan aleatoriamente en script.js
+   y se guardan en la variable --shadows de cada capa */
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#stars,
+#stars2,
+#stars3 {
+  background: transparent;
+  box-shadow: var(--shadows);
+}
+
+#stars::after,
+#stars2::after,
+#stars3::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  box-shadow: var(--shadows);
+}
+
+#stars  { width: 1px; height: 1px; animation: animStar 50s linear infinite; }
+#stars2 { width: 2px; height: 2px; animation: animStar 100s linear infinite; }
+#stars3 { width: 3px; height: 3px; animation: animStar 150s linear infinite; }
+
+@keyframes animStar {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-2000px); }
+}
+
+/* ---------- Fondo animado verde----------
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
@@ -39,7 +101,7 @@ body {
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration:20s;
 }
 
 .content {
@@ -53,11 +115,7 @@ body {
   text-align:center;
   top:50%;
   transform:translate(-50%, -50%);
-}
-
-h1 {
-  font-family:monospace;
-}
+}*/
 
 @keyframes slide {
   0% {
@@ -67,94 +125,133 @@ h1 {
     transform:translateX(25%);
   }
 }
-body {
-}
-
-h1, h2, h3 {
-}
-
-p {
-}
-
-a {
-}
-
-img {
-}
-
-::selection {
-}
 
 /* ---------- Cabecera ---------- */
-body > h1 {
+header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 0 48px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(36px, 7vw, 64px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(#fff, #9fb3c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header .subtitle {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: clamp(16px, 2.5vw, 20px);
+}
+
+/* ---------- Contenedor central ---------- */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+#AboutMe,
+#Projects {
+  margin-top: 48px;
+}
+
+/* Títulos grandes de sección */
+main h2 {
+  margin: 0 0 32px;
+  text-align: center;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+}
+
+main h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 /* ---------- About Me ---------- */
-#AboutMe {
+#AboutMeText {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 18px;
 }
 
-#AboutMe > h2 {
-}
-
-#AboutMe > p {
-}
-
-#Studies {
-
-}
-#JobExperience {
-}
-#Skills {
-}
-
-/* Títulos grandes de sección (h2 y "Projects") */
-#AboutMe > h2,
-#Projects::before {
-}
-
-/* ---------- Títulos de cada bloque ---------- */
-#Studies > h3,
-#Skills > h3,
-#JobExperience > h3,
-#JobProjects::before,
-#GameProjects::before,
-#personalProjects::before {
-}
-
-#Studies > h3::after,
-#Skills > h3::after,
-#JobExperience > h3::after {
-}
-
-/* ---------- Tarjetas de estudios y trabajos ---------- */
+/* ---------- Bloques (estudios, competencias, idiomas, trabajo y proyectos) ---------- */
 #Studies,
-#JobExperience {
+#Skills,
+#Languages,
+#JobExperience,
+#JobProjects,
+#GameProjects,
+#personalProjects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
+  margin-top: 56px;
 }
 
+/* Títulos de cada bloque */
 #Studies > h3,
-#JobExperience > h3 {
+#Skills > h3,
+#Languages > h3,
+#JobExperience > h3,
+#JobProjects > h3,
+#GameProjects > h3,
+#personalProjects > h3 {
   width: 100%;
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
+/* Texto de introducción de cada apartado */
+#Projects .intro {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 16px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* ---------- Tarjetas (como estaban) ---------- */
+#Studies > div,
+#JobExperience > div,
+#Skills > div,
+#Languages > div,
+#JobProjects > div,
+#GameProjects > div,
+#personalProjects > div {
+  box-sizing: border-box;
+  background-color: rgba(255, 238, 0, 0.2);
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Estudios y trabajos ---------- */
 #Studies > div,
 #JobExperience > div {
   position: relative;
-  box-sizing: border-box;
   flex: 1 1 280px;
   max-width: 400px;
   padding: 16px 20px;
-}
-
-/* Línea de color a la izquierda */
-#Studies > div::before,
-#JobExperience > div::before {
-}
-
-#Studies > div:hover,
-#JobExperience > div:hover {
 }
 
 #Studies > div > h3,
@@ -162,11 +259,6 @@ body > h1 {
   margin: 0 0 8px;
   padding-right: 56px;
   font-size: 16px;
-}
-
-/* Institución / empresa */
-#Studies > div > p:nth-of-type(1),
-#JobExperience > div > p:nth-of-type(1) {
 }
 
 #Studies > div > p,
@@ -187,26 +279,13 @@ body > h1 {
   border-radius: 8px;
 }
 
-/* Etiquetas "Dates:", "Description:", "Tasks:" */
-p > strong {
-}
-
-/* ---------- Skills como chips ---------- */
+/* ---------- Competencias como etiquetas ---------- */
 #Skills {
-  display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-}
-
-#Skills > h3 {
-  width: 100%;
 }
 
 #Skills > div {
   padding: 4px 12px;
-}
-
-#Skills > div:hover {
 }
 
 #Skills > div > h3 {
@@ -215,25 +294,8 @@ p > strong {
   font-weight: normal;
 }
 
-#Skills > div > p {
-}
-
-#Skills > div > p > strong {
-}
-
-/* ---------- Idiomas en fila ---------- */
-#Languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-#Languages > h3 {
-  width: 100%;
-}
-
+/* ---------- Idiomas ---------- */
 #Languages > div {
-  box-sizing: border-box;
   flex: 1 1 160px;
   max-width: 220px;
   padding: 12px 20px;
@@ -250,56 +312,9 @@ p > strong {
 }
 
 /* ---------- Proyectos ---------- */
-#Projects {
-}
-
-#Projects::before {
-}
-
-#JobProjects::before {
-}
-#GameProjects::before {
-}
-#personalProjects::before {
-}
-
-#JobProjects,
-#GameProjects,
-#personalProjects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-#JobProjects > h3,
-#GameProjects > h3,
-#personalProjects > h3 {
-  width: 100%;
-}
-
-#JobProjects::before,
-#GameProjects::before,
-#personalProjects::before {
-}
-
-/* Tarjeta amarilla (estudios, trabajos, skills y proyectos) */
-#Studies > div,
-#JobExperience > div,
-#Skills > div,
-#Languages > div,
 #JobProjects > div,
 #GameProjects > div,
 #personalProjects > div {
-  background-color: rgba(255, 238, 0, 0.2);
-  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#JobProjects > div,
-#GameProjects > div,
-#personalProjects > div {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex: 1 1 300px;
@@ -308,15 +323,19 @@ p > strong {
   overflow: hidden;
 }
 
-#JobProjects > div:hover,
-#GameProjects > div:hover,
-#personalProjects > div:hover {
+#JobProjects > div > h3,
+#GameProjects > div > h3,
+#personalProjects > div > h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
 }
 
-/* La imagen va la última en el HTML, pero se muestra arriba */
-#JobProjects > div > div,
-#GameProjects > div > div,
-#personalProjects > div > div {
+#JobProjects > div > p,
+#GameProjects > div > p,
+#personalProjects > div > p {
+  margin: 4px 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
 }
 
 #JobProjects > div > div > img,
@@ -342,25 +361,6 @@ p > strong {
   border: 0;
 }
 
-#JobProjects > div:hover img,
-#GameProjects > div:hover img,
-#personalProjects > div:hover img {
-}
-
-#JobProjects > div > h3,
-#GameProjects > div > h3,
-#personalProjects > div > h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
-}
-
-#JobProjects > div > p,
-#GameProjects > div > p,
-#personalProjects > div > p {
-  margin: 4px 0;
-  font-size: 14px;
-}
-
 /* Tareas como etiquetas */
 #Projects ul {
   display: flex;
@@ -378,48 +378,28 @@ p > strong {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Botón "Ver en itch.io" */
-#Projects a {
-}
-
-#Projects a:hover {
-}
-
-/* ---------- Animación de entrada ---------- */
-@keyframes fadeUp {
-    from {
-    }
-    to {
-    }
+#Projects > div > div > a {
+  align-self: flex-start;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-    }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 /* ---------- Móvil ---------- */
 @media (max-width: 760px) {
-    body {
-    }
+  header {
+    padding: 64px 0 32px;
+  }
 
-    #AboutMe {
-    }
-
-    #Studies > div,
-    #JobExperience > div,
-    #JobProjects > div,
-    #GameProjects > div,
-    #personalProjects > div {
-        max-width: 100%;
-    }
-
-    #Studies > div > img,
-    #JobExperience > div > img {
-    }
-
-    #JobProjects,
-    #GameProjects,
-    #personalProjects {
-    }
+  #Studies > div,
+  #JobExperience > div,
+  #JobProjects > div,
+  #GameProjects > div,
+  #personalProjects > div {
+    max-width: 100%;
+  }
 }

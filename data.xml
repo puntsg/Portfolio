@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV>
 <Profile>
-    <About>Hola, me llamo Sergi Gonzalez Berlanga, actualmente soy estudiante de la carrera de Contenidos Digitales Interactivos en ENTI, centro adscrito a la Universitat de Barcelona.</About>
+    <About>Hola, me llamo Sergi González Berlanga, actualmente soy estudiante de la carrera de Contenidos Digitales Interactivos en ENTI, centro adscrito a la Universitat de Barcelona.</About>
 </Profile>
 <Studies>
     <Study>
@@ -52,7 +52,7 @@
         <Company>Ping Pong Technologies</Company>
         <Dates>nov 2022 - abr 2023</Dates>
         <Location>Barcelona, Cataluña, España</Location>
-        <Description>Soporte en la realización de contenido interactivo para museos, eventos y exposiciones.</Description>
+        <Description>Apoyo en la realización de contenido interactivo para museos, eventos y exposiciones.</Description>
         <Media>
             <Image>ppt.jpg</Image>
         </Media>
@@ -138,8 +138,8 @@
             <Dates>feb 2023-mar 2023</Dates>
             <Description>Proyecto en el que el usuario graba un clip de audio introduciendo a las jugadoras del equipo.</Description> 
             <Tasks>
-                <Task>Animación de UI</Task>
-                <Task>QA</Task>
+                <Task>Animación de interfaz</Task>
+                <Task>Control de calidad</Task>
             </Tasks>
             <Media>
                 <Image>Barça.png</Image>
@@ -148,7 +148,7 @@
         <Project>
             <Title>Banana Gate</Title>
             <Dates>jun 2023-oct 2023</Dates>
-            <Description>Filtros para el fotomaton del Museo de arte prohibido de Tatxo Benet.</Description> 
+            <Description>Filtros para el fotomatón del Museo del Arte Prohibido de Tatxo Benet.</Description> 
             <Tasks>
                 <Task>Programación</Task>
                 <Task>Lens Studio</Task>
@@ -159,12 +159,12 @@
         </Project>
         <Project>
             <Title>Symphony</Title>
-            <Dates>dec 2023-aug 2024</Dates>
-            <Description>Experiencia inmersiva musical en Realidad Virtual</Description> 
+            <Dates>dic 2023-ago 2024</Dates>
+            <Description>Experiencia musical inmersiva en realidad virtual.</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
                 <Task>Actualización de hardware y software</Task>
-                <Task>QA</Task>
+                <Task>Control de calidad</Task>
                 <Task>Estudio de mercado</Task>
             </Tasks>
             <Media>
@@ -173,8 +173,8 @@
         </Project>
         <Project>
             <Title>Talking Brains</Title>
-            <Dates>mar 2024-apr 2024</Dates>
-            <Description>Exposición interactiva sobre el cerebro humano para Obra Social LaCaixa. Encargado de la adaptación para el traslado a portugal</Description> 
+            <Dates>mar 2024-abr 2024</Dates>
+            <Description>Exposición interactiva sobre el cerebro humano para Obra Social LaCaixa. Encargado de la adaptación para su traslado a Portugal.</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
                 <Task>Adaptación</Task>
@@ -186,13 +186,13 @@
         <Project>
             <Title>Matemifasol</Title>
             <Dates>mar 2024-jun 2024</Dates>
-            <Description>Expposición interactiva itinerante sobre la musica y su relación con las matemáticas. Programación del interactivo/escaner y piano de la entrada.</Description> 
+            <Description>Exposición interactiva itinerante sobre la música y su relación con las matemáticas. Programación del interactivo/escáner y del piano de la entrada.</Description> 
             <Tasks>
-                <Task>Programación de UI</Task>
+                <Task>Programación de interfaz</Task>
                 <Task>Arduino</Task>
-                <Task>QA</Task>
+                <Task>Control de calidad</Task>
                 <Task>Tratamiento de contenido</Task>
-                <Task>Detección de personas con Mediapipe e infrarojos</Task>
+                <Task>Detección de personas con Mediapipe e infrarrojos</Task>
             </Tasks>
             <Media>
             </Media>  
@@ -200,7 +200,7 @@
         <Project>
             <Title>Taula d'operacions</Title>
             <Dates>may 2025-sep 2025</Dates>
-            <Description>Aplicativo interactivo para la exposición conmemorativa del 70 aniversario del centro hospitalario Vall d'Hebrón</Description> 
+            <Description>Aplicativo interactivo para la exposición conmemorativa del 70 aniversario del centro hospitalario Vall d'Hebrón.</Description> 
             <Tasks>
                 <Task>Mantenimiento</Task>
                 <Task>Adaptación</Task>
@@ -211,12 +211,12 @@
         </Project>
         <Project>
             <Title>Fantastix-Manduka</Title>
-            <Dates>jan 2026-mar 2026</Dates>
-            <Description>Interactivo para la experiencia inmersiva <a href="https://fantastixsuper3.com/">fantastix</a> del canal televisivo SX3 basado en el programa Manduka.</Description> 
+            <Dates>ene 2026-mar 2026</Dates>
+            <Description>Interactivo para la experiencia inmersiva <a href="https://fantastixsuper3.com/">Fantastix</a> del canal de televisión SX3, basado en el programa Manduka.</Description> 
             <Tasks>
-                <Task>Animación de UI</Task>
+                <Task>Animación de interfaz</Task>
                 <Task>Programación</Task>
-                <Task>QA</Task>
+                <Task>Control de calidad</Task>
             </Tasks>
             <Media>
                 <Image>fantastix.jpg</Image>
@@ -224,12 +224,12 @@
         </Project>
         <Project>
             <Title>Ojo de halcón</Title>
-            <Dates>jan 2026-mar 2026</Dates>
-            <Description>Simulador de hojo de halcón para el museo de Rafa Nadal a cargo de Mediapro Exhibitions</Description> 
+            <Dates>ene 2026-mar 2026</Dates>
+            <Description>Simulador de ojo de halcón para el museo de Rafa Nadal a cargo de Mediapro Exhibitions.</Description> 
             <Tasks>
                 <Task>Programación</Task>
-                <Task>Animación de UI</Task>
-                <Task>QA</Task>
+                <Task>Animación de interfaz</Task>
+                <Task>Control de calidad</Task>
             </Tasks>
             <Media>
                 <Image>OjoHalcon.jpg</Image>
@@ -240,27 +240,13 @@
         <Project>
             <Title>Sigurd</Title>
             <Dates>feb 2023-may 2023</Dates>
-            <Description>Juego de acción/aventura realizado como proyecto final de CFGS en conjunto con otros estudiantes tanto de programación como de arte.</Description> 
+            <Description>Juego de acción/aventura realizado como proyecto final de CFGS junto con otros estudiantes tanto de programación como de arte.</Description> 
             <Tasks>
                 <Task>Unity</Task>
                 <Task>Programación</Task>
-                <Task>Character controller</Task>
-                <Task>Gameplay programmer</Task>
+                <Task>Controlador de personaje</Task>
+                <Task>Programación de jugabilidad</Task>
             </Tasks>
-            <Media>
-                <Source>
-                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
-                </Source>
-            </Media>  
-        </Project>
-        <Project>
-            <Title>Party Goobers</Title>
-            <Description>Juego de lucha tipo party en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
-            <Genre>Lucha, Plataformas</Genre>
-            <Platform>Windows</Platform>
-            <Status>En desarrollo</Status>
-            <Team>Party Puppers</Team>
-            <Engine>Unity</Engine>
             <Media>
                 <Source>
                     <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
@@ -270,7 +256,7 @@
         <Project>
             <Title>Splitted</Title>
             <Dates>sep 2025-oct 2025</Dates>
-            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas explorador resolviendo acertijos con clones suyos.</Description> 
+            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas a un explorador que resuelve acertijos con la ayuda de sus clones.</Description> 
             <Tasks>
                 <Task>Unity</Task>
                 <Task>Programación</Task>
@@ -281,7 +267,7 @@
         <Project>
             <Title>Beneath the blue</Title>
             <Dates>oct 2025-nov 2025</Dates>
-            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas a un pulpito explorando el fondo marino.</Description> 
+            <Description>Pequeño prototipo realizado con estudiantes de arte en el que encarnas a un pulpito que explora el fondo marino.</Description> 
             <Tasks>
                 <Task>Unreal</Task>
                 <Task>Programación</Task>
@@ -294,7 +280,7 @@
         </Project>
         <Project>
             <Title>Party Goobers</Title>
-            <Description>Juego de lucha tipo party en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
+            <Description>Juego de lucha multijugador en el que te enfrentas a tus amigos lanzando objetos mientras el mapa se genera y se destruye a tu alrededor. Desarrollado para la asignatura Proyecto II de ENTI.</Description>
             <Genre>Lucha, Plataformas</Genre>
             <Platform>Windows</Platform>
             <Status>En desarrollo</Status>
@@ -302,16 +288,13 @@
             <Engine>Unity</Engine>
             <Link>https://party-puppers.itch.io/party-goobers</Link>
             <Media>
-                <Source>
-                    <iframe frameborder="0" src="https://itch.io/embed/4512078" width="552" height="167"><a href="https://medusabox.itch.io/yakotaki">Yakotaki by Medusa Box, RiaDase, Nero Moreno, SBerlanga, NBarrero, Garsudp</a></iframe>
-                </Source>
             </Media>  
         </Project>
     </gameProjects>
     <PersonalProjects>
         <Project>
             <Title>Forget da gold!</Title>
-            <Description>Proyecto realizado para una Jam en tres horas. Eres un marinero en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie con el mayor oro posible, pero cuidado porque de ir demasiado cargado te puede frenar.</Description>
+            <Description>Proyecto realizado en tres horas para una competición de desarrollo de videojuegos (game jam). Eres un marinero en busca de tesoros cuya campana de buceo se ha soltado. Tienes que volver a la superficie con todo el oro que puedas, pero cuidado: si vas demasiado cargado, el peso te frenará.</Description>
             <Media>
                 <Source>
                     <iframe frameborder="0" src="https://itch.io/embed/3756348?bg_color=0484d1&amp;fg_color=ffe762&amp;link_color=b86f50&amp;border_color=b86f50" width="552" height="167"><a href="https://sberlanga.itch.io/forget-the-gold">Forget da gold! by SBerlanga, Dairon</a></iframe>

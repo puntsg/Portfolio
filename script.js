@@ -34,6 +34,12 @@ function getText(node, tag) {
     return element ? element.textContent.trim() : "";
 }
 
+// Como getText, pero conserva etiquetas internas (p. ej. <a> en una descripción)
+function getHTML(node, tag) {
+    var element = node.getElementsByTagName(tag)[0];
+    return element ? element.innerHTML.trim() : "";
+}
+
 function getStudies() {
     var studies = xmlDoc.getElementsByTagName("Study");
     var studiesList = document.getElementById("Studies");
@@ -46,8 +52,8 @@ function getStudies() {
         var image = getText(study, "Image");
 
         var studyElement = document.createElement("div");
-        studyElement.innerHTML = "<h3>" + title + "</h3><p>" + institution + "</p><p><strong>Dates:</strong> " + dates + "</p>";
-        if (description) studyElement.innerHTML += "<p><strong>Description:</strong> " + description + "</p>";
+        studyElement.innerHTML = "<h3>" + title + "</h3><p>" + institution + "</p><p><strong>Fechas:</strong> " + dates + "</p>";
+        if (description) studyElement.innerHTML += "<p><strong>Descripción:</strong> " + description + "</p>";
         if (image) studyElement.innerHTML += "<img src='Assets/InstitutionsLogos/" + image + "' alt='" + institution + "'>";
         studiesList.appendChild(studyElement);
     }
@@ -64,7 +70,7 @@ function getLanguages() {
 
         var languageElement = document.createElement("div");
         languageElement.innerHTML = "<h3>" + name + "</h3>";
-        if (level) languageElement.innerHTML += "<p><strong>Level:</strong> " + level + "</p>";
+        if (level) languageElement.innerHTML += "<p><strong>Nivel:</strong> " + level + "</p>";
         languagesList.appendChild(languageElement);
     }
 }
@@ -79,7 +85,7 @@ function getSkills() {
 
         var skillElement = document.createElement("div");
         skillElement.innerHTML = "<h3>" + name + "</h3>";
-        if (level) skillElement.innerHTML += "<p><strong>Level:</strong> " + level + "</p>";
+        if (level) skillElement.innerHTML += "<p><strong>Nivel:</strong> " + level + "</p>";
         skillsList.appendChild(skillElement);
     }
 }
@@ -96,8 +102,8 @@ function getJobExperience() {
         var image = getText(job, "Image");
 
         var jobElement = document.createElement("div");
-        jobElement.innerHTML = "<h3>" + title + "</h3><p>" + company + "</p><p><strong>Dates:</strong> " + dates + "</p>";
-        if (description) jobElement.innerHTML += "<p><strong>Description:</strong> " + description + "</p>";
+        jobElement.innerHTML = "<h3>" + title + "</h3><p>" + company + "</p><p><strong>Fechas:</strong> " + dates + "</p>";
+        if (description) jobElement.innerHTML += "<p><strong>Descripción:</strong> " + description + "</p>";
         if (image) jobElement.innerHTML += "<img src='Assets/CompaniesLogos/" + image + "' alt='" + company + "'>";
         jobsList.appendChild(jobElement);
     }
@@ -112,17 +118,17 @@ function getProjects(xmlTag, containerId) {
         var project = projects[i];
         var title = getText(project, "Title");
         var dates = getText(project, "Dates");
-        var description = getText(project, "Description");
+        var description = getHTML(project, "Description");
         var link = getText(project, "Link");
         var image = getText(project, "Image");
         var tasks = project.getElementsByTagName("Task");
         var mediaSource = project.getElementsByTagName("Source")[0];
 
         var html = "<h3>" + title + "</h3>";
-        if (dates) html += "<p><strong>Dates:</strong> " + dates + "</p>";
-        if (description) html += "<p><strong>Description:</strong> " + description + "</p>";
+        if (dates) html += "<p><strong>Fechas:</strong> " + dates + "</p>";
+        if (description) html += "<p><strong>Descripción:</strong> " + description + "</p>";
         if (tasks.length > 0) {
-            html += "<p><strong>Tasks:</strong></p><ul>";
+            html += "<p><strong>Tareas:</strong></p><ul>";
             for (var j = 0; j < tasks.length; j++) {
                 html += "<li>" + tasks[j].textContent.trim() + "</li>";
             }
@@ -139,4 +145,23 @@ function getProjects(xmlTag, containerId) {
     }
 }
 
+// Fondo de estrellas: genera n puntos aleatorios como box-shadow (equivale a la función de Sass)
+function multipleBoxShadow(n) {
+    var width = Math.max(window.innerWidth, 2000);
+    var shadows = [];
+    for (var i = 0; i < n; i++) {
+        shadows.push(Math.floor(Math.random() * width) + "px " + Math.floor(Math.random() * 2000) + "px #FFF");
+    }
+    return shadows.join(", ");
+}
+
+function createStars() {
+    var layers = { stars: 700, stars2: 200, stars3: 100 };
+    for (var id in layers) {
+        var element = document.getElementById(id);
+        if (element) element.style.setProperty("--shadows", multipleBoxShadow(layers[id]));
+    }
+}
+
+createStars();
 getData();
